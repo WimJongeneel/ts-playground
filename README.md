@@ -11,3 +11,18 @@
   * list_get
   * list_count
   * list_delete
+
+* option: `src/monads/option.ts`
+  * none
+  * some
+  * option_map
+  * option_join
+  * option_bind
+
+* sum: `src/monands/sum.ts`
+  * left
+  * rigth
+  * sum_map
+  * sum_join
+  * sum_bind
+  * sum_cast
