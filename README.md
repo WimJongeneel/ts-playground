@@ -26,3 +26,14 @@
   * sum_join
   * sum_bind
   * sum_cast
+
+* binary search tree: `src/tree/binary_tree`
+  * bst_from
+  * bst_insert
+  * bst_search
+  * bst_contains
+  * bst_to_array
+  * bst_from_array
+  * bst_balance
+  * bst_min
+  * bst_max
