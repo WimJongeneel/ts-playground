@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-      "outDir": "./wwwroot/js",
+      "outDir": "./build/bundle.js",
       "sourceMap": true,
       "noImplicitAny": true,
       "module": "commonjs",
@@ -14,6 +14,6 @@
       "strict": true
   },
   "include": [
-      "./client/**/*"
+      "./src/**/*"
   ]
 }

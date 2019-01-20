@@ -45,6 +45,9 @@ const list_get = <a>(l:List<a>) => (i:number, _i: number = 0): a | null =>
 const list_set = <a>(l:List<a>) => (i:number, _i = 0) => (a:a): List<a> =>
   ({value: _i == i ? a : l.value, tail: l.tail ? list_set(l.tail)(i, _i+1)(a) : null})
 
+const list_delete = <a>(l:List<a>) => (i:number, _i = 0): List<a> | null => 
+  i == _i ? l.tail : ({value: l.value, tail: l.tail ? list_delete(l.tail)(i, _i+1) : null })
+
 export const test = () => {
   const l = list_from(1)
   console.log(l)
@@ -65,4 +68,8 @@ export const test = () => {
   console.log(list_get(l7)(3))
 
   console.log(list_set(l7)(8)(9))
+  console.log(list_delete(l7)(0))
+  console.log(list_delete(l7)(1))
+  console.log(list_delete(l7)(2))
+  console.log(list_delete(l7)(3))
 }
