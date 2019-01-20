@@ -37,3 +37,10 @@
   * bst_balance
   * bst_min
   * bst_max
+
+* stack: `src/data_structures/stack`
+  * stack_from
+  * stack_pop
+  * stack_push
+  * stack_count
+  * stack_peek
